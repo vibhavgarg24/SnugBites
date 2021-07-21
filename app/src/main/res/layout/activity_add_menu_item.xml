@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_op10"
+    tools:context=".AddMenuItem">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topLayoutAddMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/topToolbarAddMenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backIvAddMenuItem"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/ic_arrow_back"
+                    android:backgroundTint="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/addItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Add Item"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/backIvAddMenuItem"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayoutAddMenuItem"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/addMenuItemImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@color/bg_op10"
+                android:src="@drawable/ic_food_bank" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="(Click the icon above to add image of menu item)"
+            android:textColor="@android:color/darker_gray" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/menuItemNameMet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Name*"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="15sp"
+            app:met_baseColor="@android:color/black"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_textColor="@android:color/black" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/menuItemDescMet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="15sp"
+            app:met_baseColor="@android:color/black"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_textColor="@android:color/black" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/menuItemPriceMet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Price*"
+            android:inputType="number"
+            android:textSize="15sp"
+            app:met_baseColor="@android:color/black"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_textColor="@android:color/black" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/menuItemUnitMet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Unit (Ex: per kg.)"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="15sp"
+            app:met_baseColor="@android:color/black"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/saveMenuItemEfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:backgroundTint="@android:color/white"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/ic_check"
+        app:iconTint="@android:color/black"
+        app:rippleColor="@android:color/holo_green_light"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_saved_posts"
+        android:icon="@drawable/ic_save_outline"
+        android:title="Saved Posts" />
+
+    <item
+        android:id="@+id/nav_my_orders"
+        android:icon="@drawable/ic_receipt_outline"
+        android:title="My Orders" />
+
+    <item
+        android:id="@+id/nav_edit_menu"
+        android:icon="@drawable/ic_menu_book"
+        android:title="Edit Menu" />
+
+    <item
+        android:id="@+id/nav_edit_profile"
+        android:icon="@drawable/ic_edit"
+        android:title="Edit Profile" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+</menu>

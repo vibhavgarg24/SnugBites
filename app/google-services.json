@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "439451592342",
+    "project_id": "snug-bites",
+    "storage_bucket": "snug-bites.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439451592342:android:114daea99e6202035444b7",
+        "android_client_info": {
+          "package_name": "com.example.snugbites"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439451592342-ummseiourit06p36m339d5cv8u9ic3gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvwnVmpYVljhSO0b8O8S4GaSLrqWClOdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439451592342-ummseiourit06p36m339d5cv8u9ic3gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

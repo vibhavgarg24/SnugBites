@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="bottom_navigation">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon_selector"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search_icon_selector"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_post"
+        android:icon="@drawable/icon_add_circle_outline"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile_icon_selector"
+        android:title="" />
+
+</menu>

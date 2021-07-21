@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".UserNameActivity">
+    <!--    android:background="#FFC533"-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/bgiv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:foreground="@drawable/gradient_bg"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        android:src="@drawable/food_bg" />-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintTop_toTopOf="@id/guideline3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/emailMet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:enabled="false"
+                android:hint="Email"
+                app:met_baseColor="@android:color/darker_gray"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@android:color/black"
+                app:met_primaryColor="@android:color/darker_gray"
+                app:met_textColor="@android:color/darker_gray"
+                app:met_textColorHint="@android:color/darker_gray"
+                app:met_underlineColor="@android:color/black" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nameMet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:enabled="false"
+                android:hint="Name"
+                app:met_baseColor="@android:color/darker_gray"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@android:color/black"
+                app:met_primaryColor="@android:color/darker_gray"
+                app:met_textColor="@android:color/darker_gray"
+                app:met_textColorHint="@android:color/darker_gray"
+                app:met_underlineColor="@android:color/black" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/unMet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_textColor="@android:color/black"
+                app:met_textColorHint="@android:color/darker_gray"
+                app:met_underlineColor="@android:color/black" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/setUnEfab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="35dp"
+                android:backgroundTint="@color/main_color"
+                android:text="Set Username"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:elevation="15dp"
+                app:icon="@drawable/ic_check"
+                app:iconSize="30dp"
+                app:iconTint="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/unMet"
+                app:strokeColor="@android:color/white"
+                app:strokeWidth="1dp" />
+            <!--            android:backgroundTint="#FFC533"-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dpCiv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="15dp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline3" />
+    <!--        app:iconTint="#85603F"-->
+    <!--        android:backgroundTint="#BD9354"-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

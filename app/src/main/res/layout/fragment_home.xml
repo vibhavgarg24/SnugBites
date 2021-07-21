@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_op10">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/topToolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="cursive"
+                    android:text="Snug Bites"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="italic|bold" />
+
+            </RelativeLayout>
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayoutHome">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/postsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/recycler_view_bottom_padding" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginEnd="10dp"-->
+    <!--        app:cardCornerRadius="15dp">-->
+
+    <!--        <eightbitlab.com.blurview.BlurView-->
+    <!--            android:id="@+id/blurView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:blurOverlayColor="#4D000000">-->
+
+    <!--            <Toolbar-->
+    <!--                android:id="@+id/topToolbarHome"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@android:color/transparent"-->
+    <!--                android:elevation="0dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerInParent="true"-->
+    <!--                        android:fontFamily="cursive"-->
+    <!--                        android:text="Snug Bites"-->
+    <!--                        android:textColor="@android:color/white"-->
+    <!--                        android:textSize="30sp"-->
+    <!--                        android:textStyle="italic|bold" />-->
+
+    <!--                </RelativeLayout>-->
+    <!--            </Toolbar>-->
+
+    <!--        </eightbitlab.com.blurview.BlurView>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>
