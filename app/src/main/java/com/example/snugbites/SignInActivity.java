@@ -37,13 +37,15 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import java.util.HashMap;
 import java.util.Objects;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class SignInActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 11;
     private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
 
-    private ImageView iconIv;
+    private CircleImageView iconIv;
     private ConstraintLayout signInLayout;
     private ExtendedFloatingActionButton googleSignInButton;
 

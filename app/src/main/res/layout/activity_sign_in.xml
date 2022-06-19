@@ -14,14 +14,11 @@
         android:scaleType="centerCrop"
         android:src="@drawable/food_bg" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iconIv"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@drawable/bg_circle"
-        android:backgroundTint="@android:color/holo_red_light"
-        android:padding="25dp"
-        android:src="@drawable/ic_home_24"
+        android:src="@drawable/sb_logo_crop"
         app:layout_constraintBottom_toBottomOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
