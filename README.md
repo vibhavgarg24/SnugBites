@@ -31,3 +31,9 @@
   <img src="screenshots/ss_9.png" width=49% />
   <img src="screenshots/ss_10.png" width=49% />
 </p>
+
+#### Future Scope:
+- Businnes profile availability.
+- Insights and stats for sellers.
+
+#### Download and install the apk from [Release](https://github.com/vibhavgarg24/SnugBites/releases) section.❤  Don't forget to Star the repo if you like it! 🌟
